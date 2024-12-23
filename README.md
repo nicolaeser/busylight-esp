@@ -103,7 +103,7 @@ It will automatically switch to the BusyLight in:
 |-------------------------------|-------------------------------------|
 | ![lib-menu](img/lib-menu.png) | ![lib-install](img/lib-install.png) |
 
-**(3)** Edit the `WIFI Configuration` section in the [boot.py](/ESP32/boot.py) file.
+**(3)** Edit the `WIFI Configuration` section in the [boot.py](ESP32/boot.py) file.
 
 **(4)** Copy the content of [ESP32](ESP32/) folder with the modified `boot.py` file to the root of your ESP32 file system. Again, can easily be done using [Thonny](https://thonny.org):
 
