@@ -1,10 +1,16 @@
 # What's this project?
 
+**Let people know if they can bother you with light signals!**
+
 A simple to build, nice looking, portable DIY **Busy Light**.
 
 It comes with a with a rudimentary (and ugly) **Web UI** and a simple (but hopefully convenient) **Rest API**.
 
-![busylight](img/busylight.png)
+
+
+|                           |                     |                                      |
+|---------------------------|---------------------|--------------------------------------|
+| ![busylight and stream deck](img/busylight.jpg) | ![busylight roll](img/busylight.gif) |
 
 # Web UI
 A very simplistic (and ugly) UI is available on port `80`. \
