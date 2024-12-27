@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Configure your BusyLight</title>
+        <meta charset="utf-8" />
+        <script src="https://sdpi-components.dev/releases/v3/sdpi-components.js"></script>
+        <script>
+            function getGlobalSettings() {
+                const { streamDeckClient } = SDPIComponents;
+                const settings = streamDeckClient.getGlobalSettings();
+                return settings.url || 'http://busylight-esp32.local';
+            }
+        </script>
+    </head>
+
+    <body>
+        <script>
+            
+        </script>
+        <!--
+            Learn more about property inspector components at https://sdpi-components.dev/docs/components
+        -->
+        <sdpi-item label="URL or IP">
+            <sdpi-textfield
+                setting="url" 
+                placeholder="http://busylight-esp32.local"
+                global="true"
+                value="getGlobalSettings()">
+            </sdpi-textfield>
+        </sdpi-item>
+    </body>
+</html>

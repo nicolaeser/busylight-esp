@@ -1,0 +1,113 @@
+{
+	"Name": "iGoX BusyLight",
+	"Version": "0.1.0.0",
+	"Author": "iGoX",
+	"$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+	"Actions": [
+		{
+			"Name": "Set status as 'Available'",
+			"UUID": "org.igox.busylight.status.available",
+			"Icon": "imgs/actions/status/available/icon",
+			"Tooltip": "Set status as 'Available'",
+			"PropertyInspectorPath": "ui/status-config.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/status/available/icon",
+					"TitleAlignment": "bottom"
+				}
+			]
+		},
+		{
+			"Name": "Set status as 'Away'",
+			"UUID": "org.igox.busylight.status.away",
+			"Icon": "imgs/actions/status/away/icon",
+			"Tooltip": "Set status as 'Away'",
+			"PropertyInspectorPath": "ui/status-config.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/status/away/icon",
+					"TitleAlignment": "bottom"
+				}
+			]
+		},
+		{
+			"Name": "Set status as 'Busy'",
+			"UUID": "org.igox.busylight.status.busy",
+			"Icon": "imgs/actions/status/busy/icon",
+			"Tooltip": "Set status as 'Busy'",
+			"PropertyInspectorPath": "ui/status-config.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/status/busy/icon",
+					"TitleAlignment": "bottom"
+				}
+			]
+		}
+		,
+		{
+			"Name": "Turn off the BusyLight",
+			"UUID": "org.igox.busylight.status.off",
+			"Icon": "imgs/actions/status/off/icon",
+			"Tooltip": "Turn off the BusyLight",
+			"PropertyInspectorPath": "ui/status-config.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/status/off/icon",
+					"TitleAlignment": "bottom"
+				}
+			]
+		},
+		{
+			"Name": "Set brightness",
+			"UUID": "org.igox.busylight.brigthness.set",
+			"Icon": "imgs/actions/brightness/icon",
+			"Tooltip": "Set brightness",
+			"PropertyInspectorPath": "ui/brightness-config.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/brightness/icon",
+					"TitleAlignment": "bottom"
+				}
+			]
+		}
+	],
+	"Category": "BusyLight",
+	"CategoryIcon": "imgs/plugin/marketplace",
+	"CodePath": "bin/plugin.js",
+	"Description": "Control your DIY BusyLight (https://github.com/igox/busylight) from your Stream Deck",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.4"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.15"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "org.igox.busylight"
+}
