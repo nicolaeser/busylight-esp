@@ -7,7 +7,7 @@
 		{
 			"Name": "Set status as 'Available'",
 			"UUID": "org.igox.busylight.status.available",
-			"Icon": "imgs/actions/status/available/icon",
+			"Icon": "imgs/actions/status/available/available",
 			"Tooltip": "Set status as 'Available'",
 			"PropertyInspectorPath": "ui/status-config.html",
 			"Controllers": [
@@ -15,7 +15,7 @@
 			],
 			"States": [
 				{
-					"Image": "imgs/actions/status/available/icon",
+					"Image": "imgs/actions/status/available/available",
 					"TitleAlignment": "bottom"
 				}
 			]
@@ -23,7 +23,7 @@
 		{
 			"Name": "Set status as 'Away'",
 			"UUID": "org.igox.busylight.status.away",
-			"Icon": "imgs/actions/status/away/icon",
+			"Icon": "imgs/actions/status/away/away",
 			"Tooltip": "Set status as 'Away'",
 			"PropertyInspectorPath": "ui/status-config.html",
 			"Controllers": [
@@ -31,7 +31,7 @@
 			],
 			"States": [
 				{
-					"Image": "imgs/actions/status/away/icon",
+					"Image": "imgs/actions/status/away/away",
 					"TitleAlignment": "bottom"
 				}
 			]
@@ -39,7 +39,7 @@
 		{
 			"Name": "Set status as 'Busy'",
 			"UUID": "org.igox.busylight.status.busy",
-			"Icon": "imgs/actions/status/busy/icon",
+			"Icon": "imgs/actions/status/busy/busy",
 			"Tooltip": "Set status as 'Busy'",
 			"PropertyInspectorPath": "ui/status-config.html",
 			"Controllers": [
@@ -47,7 +47,7 @@
 			],
 			"States": [
 				{
-					"Image": "imgs/actions/status/busy/icon",
+					"Image": "imgs/actions/status/busy/busy",
 					"TitleAlignment": "bottom"
 				}
 			]
@@ -56,7 +56,7 @@
 		{
 			"Name": "Turn off the BusyLight",
 			"UUID": "org.igox.busylight.status.off",
-			"Icon": "imgs/actions/status/off/icon",
+			"Icon": "imgs/actions/status/off/off",
 			"Tooltip": "Turn off the BusyLight",
 			"PropertyInspectorPath": "ui/status-config.html",
 			"Controllers": [
@@ -64,7 +64,7 @@
 			],
 			"States": [
 				{
-					"Image": "imgs/actions/status/off/icon",
+					"Image": "imgs/actions/status/off/off",
 					"TitleAlignment": "bottom"
 				}
 			]
@@ -72,7 +72,7 @@
 		{
 			"Name": "Set brightness",
 			"UUID": "org.igox.busylight.brigthness.set",
-			"Icon": "imgs/actions/brightness/icon",
+			"Icon": "imgs/actions/brightness/brightness",
 			"Tooltip": "Set brightness",
 			"PropertyInspectorPath": "ui/brightness-config.html",
 			"Controllers": [
@@ -80,13 +80,13 @@
 			],
 			"States": [
 				{
-					"Image": "imgs/actions/brightness/icon",
+					"Image": "imgs/actions/brightness/brightness",
 					"TitleAlignment": "bottom"
 				}
 			]
 		}
 	],
-	"Category": "BusyLight",
+	"Category": "iGoX BusyLight",
 	"CategoryIcon": "imgs/plugin/marketplace",
 	"CodePath": "bin/plugin.js",
 	"Description": "Control your DIY BusyLight (https://github.com/igox/busylight) from your Stream Deck",
