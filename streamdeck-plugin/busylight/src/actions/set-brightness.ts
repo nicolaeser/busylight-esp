@@ -5,7 +5,7 @@ export class SetBrightness extends SingletonAction<BrightnessSettings> {
     
     override async onKeyDown(ev: KeyDownEvent<BrightnessSettings>): Promise<void> {
 
-        streamDeck.logger.trace(`>>> Received KeyDownEvent. Settings: ${JSON.stringify(ev.payload.settings)} <<<`);
+        streamDeck.logger.debug(`>>> Received KeyDownEvent. Settings: ${JSON.stringify(ev.payload.settings)} <<<`);
 
         const { settings } = ev.payload;
         settings.brightness ??= 40;
@@ -14,14 +14,14 @@ export class SetBrightness extends SingletonAction<BrightnessSettings> {
 
     override onWillAppear(ev: WillAppearEvent<BrightnessSettings>): void | Promise<void> {
         
-        streamDeck.logger.trace(`>>> Received WillAppearEvent. Settings: ${JSON.stringify(ev.payload.settings)} <<<`);
+        streamDeck.logger.debug(`>>> Received WillAppearEvent. Settings: ${JSON.stringify(ev.payload.settings)} <<<`);
 
         return ev.action.setTitle(`${ev.payload.settings.brightness ?? 40}%`);
     }
 
     override async onDidReceiveSettings(ev: DidReceiveSettingsEvent<BrightnessSettings>): Promise<void> {
         
-        streamDeck.logger.trace(`>>> Received onDidReceiveSettings. Settings: ${JSON.stringify(ev.payload.settings)} <<<`);
+        streamDeck.logger.debug(`>>> Received onDidReceiveSettings. Settings: ${JSON.stringify(ev.payload.settings)} <<<`);
         
         const { settings } = ev.payload;
         await ev.action.setSettings(settings);
@@ -33,7 +33,7 @@ async function setBrightness(brightness: number) {
     const settings = await streamDeck.settings.getGlobalSettings();
     const url = settings.url;
 
-    streamDeck.logger.trace(`>>> Sending brightness: ${brightness} to ${url} <<<`);
+    streamDeck.logger.debug(`>>> Sending brightness: ${brightness} to ${url} <<<`);
 
     fetch(`${url}/api/brightness`,
         {
@@ -44,7 +44,7 @@ async function setBrightness(brightness: number) {
             body: JSON.stringify({"brightness": brightness/100})
         })
         .then(response => response.json())
-        .then(data => streamDeck.logger.trace(data));
+        .then(data => streamDeck.logger.debug(data));
 }
 
 type BrightnessSettings = {

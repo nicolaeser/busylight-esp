@@ -32,7 +32,7 @@ async function setStatus(status: string) {
     const settings = await streamDeck.settings.getGlobalSettings();
     const url = settings.url;
 
-    streamDeck.logger.trace(`>>> Sending status: ${status} to ${url} <<<`);
+    streamDeck.logger.debug(`>>> Sending status: ${status} to ${url} <<<`);
 
     fetch(`${url}/api/status/${status}`,
         {
@@ -42,5 +42,5 @@ async function setStatus(status: string) {
             }
         })
         .then(response => response.json())
-        .then(data => streamDeck.logger.trace(data));
+        .then(data => streamDeck.logger.debug(data));
 }

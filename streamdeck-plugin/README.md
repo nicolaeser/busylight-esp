@@ -1,5 +1,28 @@
 # Release notes
 
+## Version 0.2.0.0 (2024-12-28)
+
+### Download
+
+[org.igox.busylight.v0.2.0.0.streamDeckPlugin](download/org.igox.busylight.v0.2.0.0.streamDeckPlugin)
+
+### Features
+
+- Add the capability to set the color diplayed by BusyLigh LEDs.
+
+### Fixes
+
+- None.
+
+### Bugs & known limitations
+
+- None known at publication time.
+
+### Screenshot
+
+![v0.2.0.0 screenshot](img/v0.2.0.0.png)
+
+
 ## Version 0.1.0.0 (2024-12-28)
 
 ### Download
