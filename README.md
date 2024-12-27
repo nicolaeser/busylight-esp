@@ -20,6 +20,11 @@ You can try to reach the web UI @ `http://busylight-esp32.local`.
 |---------------------------|
 | ![Web UI](img/web-ui.png) |
 
+# Stream Deck plug-in
+You can download a Stream Deck plugin to control your BusyLight [here](streamdeck-plugin/busylight/org.igox.busylight.streamDeckPlugin).
+
+I will (hopefully) publish it to the [Elgato Market Place](https://marketplace.elgato.com/stream-deck/plugins) soon.
+
 # BusyLight API
 ## End points
 | Path | Method | Parameter | Description |
