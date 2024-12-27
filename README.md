@@ -12,16 +12,16 @@ It comes with a with a rudimentary (and ugly) **Web UI** and a simple (but hopef
 
 # Web UI
 A very simplistic (and ugly) UI is available on port `80`. \
-Default hostname is `busylight-esp32`.
+Default hostname is `igox-busylight`.
 
-You can try to reach the web UI @ `http://busylight-esp32.local`. 
+You can try to reach the web UI @ `http://igox-busylight.local`. 
 
 | What an ugly UI ! :smile: |
 |---------------------------|
 | ![Web UI](img/web-ui.png) |
 
 # Stream Deck plug-in
-You can download a Stream Deck plugin to control your BusyLight [here](streamdeck-plugin/busylight/org.igox.busylight.streamDeckPlugin).
+You can download a Stream Deck plugin to control your BusyLight [here](streamdeck-plugin/README.md).
 
 I will (hopefully) publish it to the [Elgato Market Place](https://marketplace.elgato.com/stream-deck/plugins) soon.
 

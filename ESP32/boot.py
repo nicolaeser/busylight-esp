@@ -11,7 +11,7 @@ gc.collect()
 SSID = '<YOUR WIFI SSID>'               # Set the WIFI network SSID
 PASSWORD = '<YOUR WIFI PASSWORD>'       # Set the WIFI network password
 network.country('<YOUR COUNTRY CODE>')  # Set the country code for the WIFI (ISO 3166-1 Alpha-2 country code)
-network.hostname('busylight-esp32')     # Hostname that will identify this device on the network
+network.hostname('igox-busylight')     # Hostname that will identify this device on the network
 # --------------------------
 
 # Function to connect to the WIFI
