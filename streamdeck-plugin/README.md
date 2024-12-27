@@ -18,7 +18,7 @@
 
 ### Bugs & known limitations
 
-None known at publication time.
+- None known at publication time.
 
 ### Screenshot
 
