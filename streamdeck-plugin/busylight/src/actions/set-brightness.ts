@@ -14,7 +14,7 @@ export class SetBrightness extends SingletonAction<BrightnessSettings> {
 
     override onWillAppear(ev: WillAppearEvent<BrightnessSettings>): void | Promise<void> {
         
-        streamDeck.logger.trace(`>>> Received WillAppearEvent. Settings: ${JSON.stringify(ev.payload.set)} <<<`);
+        streamDeck.logger.trace(`>>> Received WillAppearEvent. Settings: ${JSON.stringify(ev.payload.settings)} <<<`);
 
         return ev.action.setTitle(`${ev.payload.settings.brightness ?? 40}%`);
     }
