@@ -1,3 +1,17 @@
+# Table of Content
+
+1. [What's this project?](#whats-this-project)
+2. [Web UI](#web-ui)
+3. [Stream Deck plug-in](#stream-deck-plug-in)
+4. [BusyLight API](#busylight-api)
+5. [MuteDeck integration](#mutedeck-integration)
+6. [Electronic parts](#electronic-parts)
+7. [Firmware installation](#firmware-installation)
+8. [3D files - Enclosure](#3d-files---enclosure)
+9. [Wiring / Soldering](#wiring--soldering)
+10. [Tools & libs](#tools--libs)
+
+
 # What's this project?
 
 **Let people know if they can bother you with light signals!**
@@ -98,7 +112,7 @@ It will automatically switch to the BusyLight in:
 | Battery                 | [Anker PowerCore 5000mAh](https://www.amazon.fr/dp/B01CU1EC6Y)                                            |
 | USB A to USB C adapter  | [USB A to USB C adapter](https://www.amazon.fr/dp/B0BYK917NM)                                             |
 
-# Installation
+# Firmware installation
 
 **(1)** Flash your ESP32 with [Micropython](https://micropython.org/download/ESP32_GENERIC/).
 
@@ -120,7 +134,7 @@ It will automatically switch to the BusyLight in:
 
 All the required 3D files (STLs and f3d project) to 3D print the enclosure are available in the [3D-files-to-print](3D-files-to-print/) folder.
 
-# Wiring
+# Wiring / Soldering
 
 To be done
 
