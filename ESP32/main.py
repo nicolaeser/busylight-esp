@@ -210,7 +210,7 @@ def startUpSeq():
     time.sleep_ms(500)
     __setBusyLightStatus('OFF')
     print('Start seq is ended')
-    __setBusyLightColor(statusColors.get('OFF'), 0.4)
+    __setBusyLightColor(statusColors.get('OFF'), 0.1)
     
 startUpSeq()
         
