@@ -107,7 +107,7 @@ It will automatically switch to the BusyLight in:
 # Electronic parts
 | Parts                   | Links (Amazon - not affiliated)                                                                           |
 |-------------------------|-----------------------------------------------------------------------------------------------------------|
-| Micro-controler         | [D1 ESP32 Mini NodeMCU](https://www.amazon.fr/dp/B0CDXB48DZ)                                              |
+| Micro-controler         | [D1 ESP32 Mini NodeMCU](https://www.amazon.fr/dp/B0CDXB48DZ) - USB C version                                             |
 | Led rings (x2)          | [AZDelivery 5 x LED Ring 5V RGB compatible avec WS2812B 12-Bit 38mm](https://www.amazon.fr/dp/B07V1GGKHV) |
 | Battery                 | [Anker PowerCore 5000mAh](https://www.amazon.fr/dp/B01CU1EC6Y)                                            |
 | USB A to USB C adapter  | [USB A to USB C adapter](https://www.amazon.fr/dp/B0BYK917NM)                                             |
