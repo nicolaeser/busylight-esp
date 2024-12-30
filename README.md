@@ -134,9 +134,13 @@ It will automatically switch to the BusyLight in:
 
 All the required 3D files (STLs and f3d project) to 3D print the enclosure are available in the [3D-files-to-print](3D-files-to-print/) folder.
 
+![3D files](3D-files-to-print/img/busylight-3d.jpg)
+
 # Wiring / Soldering
 
-To be done
+![wiring-soldering](img/wiring-soldering.png)
+
+You can see a final assembly image [here](3D-files-to-print/README.md).
 
 # Tools & libs
 
