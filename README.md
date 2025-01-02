@@ -28,7 +28,7 @@ It comes with a with a rudimentary (and ugly) **Web UI** and a simple (but hopef
 A very simplistic (and ugly) UI is available on port `80`. \
 Default hostname is `igox-busylight`.
 
-You can try to reach the web UI @ `http://igox-busylight.local`. 
+You can try to reach the web UI @ [http://igox-busylight.local](http://igox-busylight.local). 
 
 | What an ugly UI ! :smile: |
 |---------------------------|
