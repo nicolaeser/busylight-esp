@@ -1,4 +1,4 @@
-import streamDeck, { action, JsonObject, KeyDownEvent, DidReceiveSettingsEvent, SingletonAction } from "@elgato/streamdeck";
+import streamDeck, { action, JsonObject, KeyDownEvent, DidReceiveSettingsEvent, PropertyInspectorDidAppearEvent, SingletonAction } from "@elgato/streamdeck";
 
 @action({ UUID: "org.igox.busylight.color.set" })
 export class SetColor extends SingletonAction {
@@ -18,6 +18,12 @@ export class SetColor extends SingletonAction {
         const { settings } = ev.payload;
         await ev.action.setSettings(settings);
     }
+
+    override async onPropertyInspectorDidAppear(ev: PropertyInspectorDidAppearEvent<ColorSettings>): Promise<void> {
+        streamDeck.logger.debug(`>>> Color button property inspector diplayed! <<<`);
+                
+        await ev.action.setImage(`imgs/actions/buttons/colored/colored.png`);
+	}
 }
 
 function hexToRgb(hex: string): { r: number, g: number, b: number } {

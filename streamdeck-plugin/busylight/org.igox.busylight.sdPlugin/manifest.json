@@ -1,6 +1,6 @@
 {
 	"Name": "iGoX BusyLight",
-	"Version": "0.3.0.0",
+	"Version": "0.3.1.0",
 	"Author": "iGoX",
 	"$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
 	"Actions": [
@@ -54,10 +54,10 @@
 		}
 	],
 	"Category": "iGoX BusyLight",
-	"CategoryIcon": "imgs/plugin/category",
+	"CategoryIcon": "imgs/plugin/category-icon",
 	"CodePath": "bin/plugin.js",
 	"Description": "Control your DIY BusyLight (https://github.com/igox/busylight) from your Stream Deck",
-	"Icon": "imgs/plugin/category",
+	"Icon": "imgs/plugin/icon",
 	"SDKVersion": 2,
 	"Software": {
 		"MinimumVersion": "6.4"

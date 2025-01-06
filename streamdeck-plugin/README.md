@@ -1,5 +1,32 @@
 # Release notes
 
+## Version 0.3.1.0 (2024-01-06)
+
+### Download
+
+[org.igox.busylight.v0.3.1.0.streamDeckPlugin](download/org.igox.busylight.v0.3.1.0.streamDeckPlugin)
+
+### Features
+
+- None added
+
+### Enhancements
+
+- Add colored button for "Set color" action.
+- Update plugin and plugin category icons
+
+### Fixes
+
+- None.
+
+### Bugs & known limitations
+
+- None known at publication time.
+
+### Screenshot
+
+![v0.3.1.0 screenshot](img/v0.3.1.0.png)
+
 ## Version 0.3.0.0 (2024-01-06)
 
 ### Download
