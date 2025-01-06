@@ -1,7 +1,6 @@
 import streamDeck, { LogLevel, SingletonAction, action, type DidReceiveSettingsEvent } from "@elgato/streamdeck";
 
-//import { IncrementCounter } from "./actions/increment-counter";
-import { SetStatusAvailable, SetStatusBusy, SetStatusAway, SetStatusOff } from "./actions/set-status";
+import { SetStatus} from "./actions/set-status";
 import { SetBrightness } from "./actions/set-brightness";
 import { SetColor } from "./actions/set-color";
 
@@ -9,10 +8,7 @@ import { SetColor } from "./actions/set-color";
 streamDeck.logger.setLevel(LogLevel.INFO);
 
 // Register the actions.
-streamDeck.actions.registerAction(new SetStatusAvailable());
-streamDeck.actions.registerAction(new SetStatusBusy());
-streamDeck.actions.registerAction(new SetStatusAway());
-streamDeck.actions.registerAction(new SetStatusOff());
+streamDeck.actions.registerAction(new SetStatus());
 streamDeck.actions.registerAction(new SetBrightness());
 streamDeck.actions.registerAction(new SetColor());
 

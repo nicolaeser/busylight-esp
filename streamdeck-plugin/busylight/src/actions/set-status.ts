@@ -1,31 +1,21 @@
-import streamDeck, { action, KeyDownEvent, SingletonAction } from "@elgato/streamdeck";
+import streamDeck, { action, KeyDownEvent, SingletonAction, DidReceiveSettingsEvent } from "@elgato/streamdeck";
 
-@action({ UUID: "org.igox.busylight.status.available" })
-export class SetStatusAvailable extends SingletonAction {
-    override async onKeyDown(ev: KeyDownEvent): Promise<void> {      
-        setStatus('available');
+@action({ UUID: "org.igox.busylight.status.set" })
+export class SetStatus extends SingletonAction {
+    override async onKeyDown(ev: KeyDownEvent<statusSettings>): Promise<void> { 
+        const { settings } = ev.payload;
+        settings.status ??= 'available';
+        setStatus(settings.status);
     }
-}
 
-@action({ UUID: "org.igox.busylight.status.busy" })
-export class SetStatusBusy extends SingletonAction {
-    override async onKeyDown(ev: KeyDownEvent): Promise<void> {
-        setStatus('busy');
-    }
-}
+    override async onDidReceiveSettings(ev: DidReceiveSettingsEvent<statusSettings>): Promise<void> {
+        const { settings } = ev.payload;
+        let status = settings.status;
+        streamDeck.logger.debug(`>>> Config status changed to: ${status} <<<`);
+        
+        await ev.action.setImage(`imgs/actions/buttons/${status}/${status}.png`);
 
-@action({ UUID: "org.igox.busylight.status.away" })
-export class SetStatusAway extends SingletonAction {
-    override async onKeyDown(ev: KeyDownEvent): Promise<void> {
-        setStatus('away');
-    }
-}
-
-@action({ UUID: "org.igox.busylight.status.off" })
-export class SetStatusOff extends SingletonAction {
-    override async onKeyDown(ev: KeyDownEvent): Promise<void> {
-        setStatus('off');
-    }
+	}
 }
 
 async function setStatus(status: string) {
@@ -44,3 +34,7 @@ async function setStatus(status: string) {
         .then(response => response.json())
         .then(data => streamDeck.logger.debug(data));
 }
+
+type statusSettings = {
+	status?: string;
+};
