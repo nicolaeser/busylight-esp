@@ -1,4 +1,4 @@
-# Release notes
+# BusyLight Stream Deck plugin - Release notes
 
 ## Version 0.3.1.0 (2024-01-06)
 
