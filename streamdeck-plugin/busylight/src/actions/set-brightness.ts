@@ -1,4 +1,4 @@
-import streamDeck, { action, DidReceiveSettingsEvent, WillAppearEvent, KeyDownEvent, SingletonAction } from "@elgato/streamdeck";
+import streamDeck, { action, DidReceiveSettingsEvent, WillAppearEvent, KeyDownEvent, PropertyInspectorDidAppearEvent, SingletonAction } from "@elgato/streamdeck";
 
 @action({ UUID: "org.igox.busylight.brigthness.set" })
 export class SetBrightness extends SingletonAction<BrightnessSettings> {
@@ -25,7 +25,13 @@ export class SetBrightness extends SingletonAction<BrightnessSettings> {
         
         const { settings } = ev.payload;
         await ev.action.setSettings(settings);
-		await ev.action.setTitle(`${settings.brightness} %`);
+		await ev.action.setTitle(`${settings.brightness}%`);
+    }
+
+    override async onPropertyInspectorDidAppear(ev: PropertyInspectorDidAppearEvent<BrightnessSettings>): Promise<void> {
+        streamDeck.logger.debug(`>>> Received onPropertyInspectorDidAppear. Setting action icon <<<`);
+                
+        await ev.action.setImage(`imgs/actions/buttons/brigthness/brigthness.png`);
     }
 }
 
