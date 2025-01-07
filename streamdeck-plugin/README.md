@@ -13,6 +13,7 @@
 ### Enhancements
 
 - Add colored button for "Set color" action.
+- Add colored button for "Set brightness" action.
 - Update plugin and plugin category icons
 
 ### Fixes
