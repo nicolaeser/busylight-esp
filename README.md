@@ -16,7 +16,7 @@
 
 **Let people know if they can bother you with light signals!**
 
-A simple to build, nice looking, portable DIY **Busy Light**.
+A cheap, simple to build, nice looking, portable DIY **Busy Light**.
 
 It comes with a with a rudimentary (and ugly) **Web UI** and a simple (but hopefully convenient) **Rest API**.
 
