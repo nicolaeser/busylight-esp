@@ -35,9 +35,12 @@ You can try to reach the web UI @ [http://igox-busylight.local](http://igox-busy
 | ![Web UI](img/web-ui.png) |
 
 # Stream Deck plug-in
-You can download a Stream Deck plugin to control your BusyLight [here](streamdeck-plugin/README.md).
+You can download a Stream Deck plugin to control your BusyLight:
 
-I will (hopefully) publish it to the [Elgato Market Place](https://marketplace.elgato.com/stream-deck/plugins) soon.
+[![get it on marketplace](img/elgato-marketplace.png "Get iGoX BusyLight on Marketplace")](https://marketplace.elgato.com/product/igox-busylight-7448a0be-6dd6-4711-ba0d-86c52b9075b9)
+
+
+Or directly from [here](streamdeck-plugin/README.md).
 
 # BusyLight API
 ## End points
