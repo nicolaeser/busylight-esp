@@ -24,6 +24,8 @@ It comes with a with a rudimentary (and ugly) **Web UI** and a simple (but hopef
 |-------------------------------------------------|---------------------------------------|
 | ![busylight and stream deck](img/busylight.jpg) | ![busylight roll](img/busylight.gif)  |
 
+![showoff video](img/busylight-showoff.mp4)
+
 # Web UI
 A very simplistic (and ugly) UI is available on port `80`. \
 Default hostname is `igox-busylight`.
