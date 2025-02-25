@@ -4,38 +4,117 @@
       <title>BusyLight</title>
       <script src="static/libs/busylight-api.js"></script>
       <script src="static/libs/jscolor.min.js"></script>
-
+      <style>
+         body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+         }
+         
+         section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 400px;
+         }
+         
+         h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ffffff;
+         }
+         
+         div {
+            margin: 12px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         }
+         
+         label {
+            font-size: 18px;
+         }
+         
+         input[type="radio"] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            transition: 0.3s;
+         }
+         
+         input[type="radio"]:checked {
+            background: #4CAF50;
+         }
+         
+         #colorPicker {
+            background: #007bff;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+         }
+         
+         #colorPicker:hover {
+            background: #0056b3;
+         }
+         
+         input[type="range"] {
+            width: 100%;
+            cursor: pointer;
+            -webkit-appearance: none;
+            background: #4CAF50;
+            height: 5px;
+            border-radius: 5px;
+         }
+         
+         input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #ffffff;
+            border-radius: 50%;
+            cursor: pointer;
+         }
+      </style>
    </head>
    <body onload="initForm()">
-      <h1>Status</h1>
       <section>
-
+         <h1>BusyLight Status</h1>
          <div>
             <input type="radio" name="status" id="off" value="off" onclick="putStatus(this.value)" />
             <label for="off">OFF</label>
          </div>
-        
          <div>
             <input type="radio" name="status" id="busy" value="busy" onclick="putStatus(this.value)" />
             <label for="busy">Busy</label>
          </div>
-
          <div>
             <input type="radio" name="status" id="available" value="available" onclick="putStatus(this.value)" />
             <label for="available">Available</label>
          </div>
-
          <div>
             <input type="radio" name="status" id="away" value="away" onclick="putStatus(this.value)" />
             <label for="away">Away</label>
          </div>
-
          <div>
             <input type="radio" name="status" id="colored" value="colored" onclick="openColorPicker()" />
-            <label for="colored">Colored: </label>
+            <label for="colored">Colored</label>
             <button id="colorPicker">Pick color</button>
          </div>
-
          <div>
             <input type="range" id="brightness" name="brightness" min="0" max="100" step="1" onchange="putBrightness(this.value)"/>
             <label for="brightness">Brightness</label>
@@ -131,6 +210,5 @@
             var b = await setBrightness(brightness);
          }
       </script>
-
    </body>
 </html>
