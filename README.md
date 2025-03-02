@@ -27,12 +27,12 @@ It comes with a with a rudimentary (and ugly) **Web UI** and a simple (but hopef
 ![showoff video](img/busylight-showoff.mp4)
 
 # Web UI
-A very simplistic (and ugly) UI is available on port `80`. \
+A very simplistic but neat UI is available on port `80` (thanks @nicolaeser). \
 Default hostname is `igox-busylight`.
 
 You can try to reach the web UI @ [http://igox-busylight.local](http://igox-busylight.local). 
 
-| What an ugly UI ! :smile: |
+| What an neat UI ! :smile: |
 |---------------------------|
 | ![Web UI](img/web-ui.png) |
 
