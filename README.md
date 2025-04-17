@@ -18,7 +18,7 @@
 
 A cheap, simple to build, nice looking and portable DIY **Busy Light**.
 
-It comes with a with a rudimentary (and ugly) **Web UI** and a simple (but hopefully convenient) **Rest API**.
+It comes with a with a simplistic but neat **Web UI** and a simple (but hopefully convenient) **Rest API**.
 
 | Controlled by Stream Deck with REST API         | Light roll                            |                     
 |-------------------------------------------------|---------------------------------------|
