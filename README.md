@@ -1,3 +1,7 @@
+# NOTICE: REPOSITORY IS NOW ARCHIVED
+# CODE IS HOSTED @ http://code.igox.org/iGoX/busylight
+
+
 # Table of Content
 
 1. [What's this project?](#whats-this-project)
