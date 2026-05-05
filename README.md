@@ -1,3 +1,7 @@
+# NOTICE: REPOSITORY IS NOW ARCHIVED
+# CODE IS HOSTED @ http://code.igox.org/iGoX/busylight
+
+
 # Table of Content
 
 1. [What's this project?](#whats-this-project)
@@ -18,7 +22,7 @@
 
 A cheap, simple to build, nice looking and portable DIY **Busy Light**.
 
-It comes with a with a rudimentary (and ugly) **Web UI** and a simple (but hopefully convenient) **Rest API**.
+It comes with a with a simplistic but neat **Web UI** and a simple (but hopefully convenient) **Rest API**.
 
 | Controlled by Stream Deck with REST API         | Light roll                            |                     
 |-------------------------------------------------|---------------------------------------|
@@ -27,12 +31,12 @@ It comes with a with a rudimentary (and ugly) **Web UI** and a simple (but hopef
 ![showoff video](img/busylight-showoff.mp4)
 
 # Web UI
-A very simplistic (and ugly) UI is available on port `80`. \
+A very simplistic but neat UI is available on port `80` (thanks @nicolaeser). \
 Default hostname is `igox-busylight`.
 
 You can try to reach the web UI @ [http://igox-busylight.local](http://igox-busylight.local). 
 
-| What an ugly UI ! :smile: |
+| What an neat UI ! :smile: |
 |---------------------------|
 | ![Web UI](img/web-ui.png) |
 
